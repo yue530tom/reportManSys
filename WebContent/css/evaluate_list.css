@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+*{
+	font-size: 14px;
+    font-family: 微软雅黑;
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#Conetent_header{
+	width:1200px;
+	margin:0 auto;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    width:1300px;
+    
+}
+.content_header h3{
+	text-align:center;
+	font-size:24px;
+	font-weight:normal;
+	
+}
+#Query_info_table td{
+	padding:5px 50px;
+	width:400px;
+}
+div .query_table{
+	text-align: left;
+	margin:0 auto;
+	margin-left: 160px;
+}
+
+.search_result_div{
+	 margin-top:10px;
+	 height:50px;
+	 width: 1300px;
+     margin: 0 auto;
+     text-align: center;
+	 }
+ .result_declare{
+	 position:relative;
+	 float:left;
+	 margin: 5px 165px 20px 105px;
+	 }
+ .result_declare>label{
+	 margin:auto 1px;
+	 font-size:14px;}
+ .state_font_color{
+	 color:#000;}
+ .compare_table {
+	 width:1300px;
+	 overflow:hidden;
+	 margin:0 auto;
+	 text-align:center;
+	 border:1px solid rgba(234, 228, 228, 0.78);}
+ .refer_list_div{
+	 position:relative;
+	 float:left;
+	 width:400px;
+	 text-align:left;
+	 margin-left: 23px;}
+ .result_prompt_info_div{
+	 margin:5px;
+	margin-top:18px;
+	 }
+ .product_prompt_info{
+	 overflow:hidden;
+	 font-weight:normal;
+	 font-size:16px;
+	 display:none;
+	  text-align:left;
+	 }
+ .query_correct .query_name_span{
+	 font-size:16px;}
+ ul{
+	 padding-left:2px;
+	 margin-bottom:0px;}
+ .refer_list_ul>li{
+	 list-style:none;
+	 margin:0;
+	 padding:0;
+	 border:1px solid #EEF1D4;
+	 border-bottom-style:hidden;}
+ .content_div{
+	 position:relative;
+	 height:160px;
+	 }
+ .content_div .picture{
+	 display:inline-block;
+	 width:130px;
+	 height:150px;
+	 
+	 }
+ .content_div img {
+    border: none;
+    padding:3px;
+    width: 130px;
+    height: 150px;
+    display: block;
+}
+ .content_div .product_info {
+    width: 250px;
+    height: 150px;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #888888;
+    line-height: 19px;
+    border-left: none;
+    border-right: none;
+	overflow:hidden;
+}
+.product_detail_info{
+	color:rgba(90, 5, 36, 0.71);
+}
+#partOfQueryInfo{
+	display:none;
+}
+#download{
+	position:relative;
+    margin-top: -10px;
+    margin-left: 985px;
+    font-size:14px;
+}
+em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+.product_info p a{
+font-size:12px;
+}
+button{
+width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(154, 152, 152);
+    background-color: rgb(240, 240, 230);
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 1300px;
+    }

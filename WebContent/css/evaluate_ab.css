@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+*{
+	font-size: 14px;
+    font-family: 微软雅黑;
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#Conetent_header{
+	width:1200px;
+	margin:0 auto;
+}
+em {
+    font-style: normal;
+}
+hr{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px solid #eee;
+    width:1300px;
+    
+}
+.content_header h3{
+	text-align:center;
+	font-size:24px;
+	font-weight:normal;
+	
+}
+#Query_info_table td{
+	padding:0px 40px;
+	width:400px;
+}
+div .query_table{
+	text-align: left;
+	margin:0 auto;
+	margin-left: 160px;
+}
+
+
+#Select_button{
+	height:50px;
+	margin-top: 9px;
+}
+.btn{
+	padding: 3px 12px;
+}
+
+#HaveResDirect,#HaveResDirect>span{
+	font-size:20px;
+	text-align:center;
+	margin-top:50px;
+}
+.result_declare input{
+	margin:0 10px;
+}
+.result_declare{
+	text-align:center;
+	margin-top:10px;
+}
+.search_result_div{
+	width:1300px;
+	margin:0 auto;
+}
+.side_div{
+
+}
+
+ul{
+	 padding-left:2px;
+	 margin-bottom:0px;}
+ .refer_list_ul>li{
+	 list-style:none;
+	 margin:10px 5px;
+	 padding:0;
+	 border:1px solid #EEF1D4;
+	 border-bottom-style:solid;
+	 }
+ .content_div{
+	 position:relative;
+	 margin-top: 10px;
+	 }
+ .content_div .picture{
+	 display:inline-block;
+	 width:160px;
+	 height:180px;
+	 
+	 }
+ .content_div img {
+    border: none;
+    padding:3px;
+    width: 160px;
+    height: 180px;
+    display: block;
+}
+ .content_div .product_info {
+    width: 75%;
+    height: 150px;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #888888;
+    line-height: 19px;
+    border-left: none;
+    border-right: none;
+	overflow:hidden;
+	margin-top: 15px;
+}
+.product_detail_info{
+	color:rgba(90, 5, 36, 0.71);
+}
+
+#HaveResDirect,#noResDirect,#New_pro_info,#Old_pro_info{
+	display:none;
+}
+
+#HaveResDirect span,#noResDirect span{
+	font-weight:bold;
+}
+
+.eval_title>span{
+	font-size:16px;
+
+}
+.eval_title{
+	margin-bottom:5px;
+}
+
+.comit_btn{
+	width:80px;
+	height:30px;
+	border-radius: 3px;
+	border: 1px solid rgb(154, 152, 152);
+	
+	position: absolute;
+    margin-top: -28px;
+    margin-left: 1300px;
+}
+.comit_btn:hover{
+	background: -webkit-linear-gradient(top,rgb(189, 189, 188),#ebeced);
+background: -moz-linear-gradient(top,rgb(189, 189, 188),#ebeced);
+background: linear-gradient(top,rgb(189, 189, 188),#ebeced);}

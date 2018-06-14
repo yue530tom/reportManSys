@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：必须与对应的接口全类名一致 id:必须与对应接口的某个对应的方法名一致 -->
+<mapper namespace="com.tgb.mapper.DocumentMapper">
+
+	<insert id="save" parameterType="DocumentObject">
+		insert into
+		documentInfo(fileName,secondName,fileAuthor,fileCategory,fileMark,filePath,fileSize,fileType,fileCreateDate) values(#{fileName},#{secondName},#{fileAuthor},#{fileCategory},#{fileMark},#{filePath},#{fileSize},#{fileType},#{fileCreateDate})
+	</insert>
+
+	<update id="update" parameterType="DocumentObject">
+		update documentInfo set
+		user_name=#{userName},user_age=#{age} where user_id=#{id}
+	</update>
+
+	<delete id="delete" parameterType="int">
+		delete from documentInfo where id=#{id}
+	</delete>
+
+	<!-- mybsits_config中配置的alias类别名,也可直接配置resultType为类路劲 -->
+	<select id="findById" parameterType="int" resultType="DocumentObject">
+		select id,fileName,secondName,fileAuthor,fileCategory,fileCreateDate,fileMark,filePath,fileSize,fileType from documentInfo where id=#{id}
+	</select>
+
+	<select id="findAll1" resultType="DocumentObject">
+		select id,fileName,secondName,fileAuthor,fileCategory,fileCreateDate,fileMark,filePath,fileSize,fileType from documentInfo
+		
+	</select>
+	<select id="findAll" parameterType="Map" resultType="DocumentObject">
+		select id,fileName,secondName,fileAuthor,fileCategory,fileCreateDate,fileMark,filePath,fileSize,fileType from documentInfo
+		where 1=1
+		<if test="file_name!=null">
+			and fileName like concat('%','${file_name}','%')
+		</if>
+		<if test="editor!=null">
+			and fileAuthor like concat('%','${editor}','%')
+		</if>
+		order by fileCreateDate desc
+		<if test="start!=null and size!=null">
+	  		limit #{start},#{size};
+	  	</if>
+	</select>
+	<select id="countByName" parameterType="Map" resultType="int">
+		select count(1) from documentInfo where fileName=#{fileName}
+	</select>
+	<select id="findLast"  resultType="DocumentObject">
+		select * from documentInfo order by fileCreateDate desc limit 0,10;
+	</select>
+	<select id="getCategory" resultType="DocCategory">
+		select * from docCategory;
+	</select>
+</mapper>

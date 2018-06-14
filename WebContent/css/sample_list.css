@@ -1,0 +1,181 @@
+@CHARSET "UTF-8";
+
+* {
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content_header h3 {
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#Conetent_body, #Result_body {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#Filter_div {
+	margin: 10px 0px;
+}
+
+div .filter_div table {
+	margin: 0 auto;
+	line-height: 28px;
+}
+
+#Filter_table td {
+	padding: 5px 60px;
+}
+
+#Filter_table td input, #Filter_table td select {
+	height: 28px;
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 3px;
+}
+
+#Filter_table td input {
+	width: 150px;
+}
+
+#sample_edit_date, #Input-group-addon {
+	height: 28px;
+}
+
+#Input-group-addon {
+	float: left;
+	width: 40px;
+}
+
+.filter_btn, .download_btn {
+	width: 80px;
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid rgb(154, 152, 152);
+	background-color: rgb(240, 240, 230);
+}
+
+.download_btn {
+	width: 120px;
+	margin-left: 1000px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#pageNum {
+	border-radius: 3px;
+	border: 1px solid rgb(154, 152, 152);
+	height: 22px;
+	width: 30px;
+}
+
+.sample_div {
+	width: 1200px;
+}
+
+div .sample_table {
+	border: solid 1px rgba(226, 226, 226, 0.77);
+	text-align: center;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table[Attributes Style] {
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+}
+
+#Sample_table th, #Sample_table td {
+	border: solid 1px rgba(226, 226, 226, 0.77);
+}
+
+#Sample_table {
+	line-height: 30px;
+	width: 100%;
+}
+
+#Sample_table th {
+	text-align: left;
+	font-weight: bold;
+	height: 40px;
+	padding-left: 15px;
+}
+
+#Sample_table td {
+	text-align: left;
+	padding-left: 15px;
+}
+
+#Sample_table .text {
+	width: 300px;
+	border: 1px solid #ccc;
+	line-height: 22px;
+}
+
+#Sample_table .btn {
+	width: 80px;
+	padding: 2px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+
+#pt_div {
+	float: right;
+	padding-right: 150px;
+	margin: 20px auto;
+}
+
+#pageNum {
+	width: 30px;
+}
+
+.filter_btn:hover, .download_btn:hover {
+	background: -webkit-linear-gradient(top, rgb(189, 189, 188), #ebeced);
+	background: -moz-linear-gradient(top, rgb(189, 189, 188), #ebeced);
+	background: linear-gradient(top, rgb(189, 189, 188), #ebeced);
+}
+
+.filter_btn:active, .download_btn:active {
+	top: 1px;
+	box-shadow: 0 1px 3px #a8abae inset, 0 3px 0 #fff;
+	background: -webkit-linear-gradient(top, #e4e8ec, #e4e8ec);
+	background: -moz-linear-gradient(top, #e4e8ec, #e4e8ec);
+	background: linear-gradient(top, #e4e8ec, #e4e8ec);
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
