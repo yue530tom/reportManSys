@@ -9,7 +9,7 @@
 
 ## 功能
 
-- 目前对chrome支持良好，对其他浏览器的支持正在努力实现中>
+- 目前对chrome支持良好，对其他浏览器的支持正在努力实现中
 - 目前支持文件类型过滤：为简化系统和统一归档格式，过滤非PDF格式的文档
 - 支持在线预览
 - 支持下载
@@ -31,4 +31,4 @@
 
 ## 问题和意见反馈
 
-- <a href="yueling@dangdang.com">yueling@dangdang.com</a>
+- <a href="yue530tom@163.com">yue530tom@163.com</a>
